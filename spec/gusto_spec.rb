@@ -21,8 +21,10 @@ describe Gusto do
     expect{ instance.que_va? }.not_to raise_error Exception
     expect{ instance.fiesta! }.not_to raise_error Exception
     expect{ instance.¿y_tú? }.not_to raise_error Exception
-    expect{ instance.nada }.to raise_error NoMethodError
+  end
 
+  it 'does not respond to non special methods' do
+    expect{ instance.nada }.to raise_error NoMethodError
     expect{ instance.¿interobang! }.to raise_error NoMethodError
     expect{ instance.¿fiesta! }.to raise_error NoMethodError
   end

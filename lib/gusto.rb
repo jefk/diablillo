@@ -1,4 +1,5 @@
 class Object
+
   alias_method :old_method_missing, :method_missing
 
   def method_missing(method, *args, &block)
