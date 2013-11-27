@@ -6,11 +6,6 @@ diablillo
 ```
 require 'diablillo'
 
-class Klass
-  def y_tú?
-    42
-  end
-end
-
-Klass.new.¿y_tú? # 42
+'Ruby no habla Español'.¡gsub!('no habla', 'habla')
+# => "Ruby habla Español"
 ```
