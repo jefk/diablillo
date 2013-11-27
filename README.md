@@ -1,7 +1,6 @@
-diablillo
-=========
+# diablillo
 
-¡Call Ruby methods with el Diablillo!
+Method missing is monkey patched so calling methods like `:¿empty?` will call `:empty?`
 
 ```
 require 'diablillo'
