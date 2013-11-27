@@ -16,6 +16,7 @@ describe Que do
   it 'leaves normal method calling alone' do
     expect{ instance.que_va? }.not_to raise_error Exception
     expect{ instance.fiesta! }.not_to raise_error Exception
+    expect{ instance.nada }.to raise_error NoMethodError
     expect{ instance.¿interobang! }.to raise_error NoMethodError
   end
 
