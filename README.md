@@ -5,6 +5,6 @@ Method missing is monkey patched so calling methods like `:¿empty?` will call `
 ```
 require 'diablillo'
 
-'Ruby no habla Español'.¡gsub!('no habla', 'habla')
-# => "Ruby habla Español"
+'Ruby no habla español'.¡gsub!('no habla', 'habla')
+# => "Ruby habla español"
 ```
